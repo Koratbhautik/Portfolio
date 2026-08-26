@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bhautik Korat | Portfolio</title>
+  <link rel="stylesheet" href="style/style.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="my_pic.png" />
+</head>
+
+<body>
+
+  <!-- ───── NAVBAR ───── -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">BK<span>.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li class="nav-cv-item">
+          <a href="cv.png" download="Bhautik_Korat_CV.png" class="nav-cv-btn">
+            <i class='bx bx-download'></i> Download CV
+          </a>
+        </li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ───── HERO ───── -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+    <div class="hero-container">
+      <!-- Photo — centered at top on mobile, right side on desktop -->
+      <div class="hero-image">
+        <div class="hero-img-wrap">
+          <div class="image-ring">
+            <div class="image-ring-inner">
+              <img src="my_pic.png" alt="Bhautik Korat" />
+            </div>
+          </div>
+          <div class="floating-badge badge-1">
+            <i class='bx bx-code-alt'></i>
+            <span>C++ / C</span>
+          </div>
+          <div class="floating-badge badge-2">
+            <i class='bx bx-brain'></i>
+            <span>AI Builder</span>
+          </div>
+          <div class="floating-badge badge-3">
+            <i class='bx bx-chip'></i>
+            <span>IoT & Arduino</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-text">
+        <span class="hero-greeting">👋 Hello, I'm</span>
+        <h1 class="hero-name">Bhautik<br /><span>Korat</span></h1>
+        <div class="hero-role">
+          <span class="role-text" id="roleText"></span><span class="cursor">|</span>
+        </div>
+        <p class="hero-desc">
+          Computer Engineering student at GTU, passionate about <strong>Automation</strong> and <strong>AI</strong>.
+          Built <strong>'Eric'</strong> — a custom AI assistant — and a <strong>fingerprint-based security system</strong>
+          from scratch. Always building, always learning.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Hire Me <i class='bx bx-send'></i></a>
+          <a href="#projects" class="btn btn-outline">View Work <i class='bx bx-right-arrow-alt'></i></a>
+          <a href="tel:+918320368111" class="btn btn-call">
+            <i class='bx bx-phone-call'></i> Call Me
+          </a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://www.linkedin.com/in/bhautik-korat-83249a36a" target="_blank" aria-label="LinkedIn">
+            <i class='bx bxl-linkedin'></i>
+          </a>
+          <a href="https://www.instagram.com/bhautik._.korat?igsi=MTUzNHM5bnFiZHl4dA==" target="_blank" aria-label="Instagram">
+            <i class='bx bxl-instagram'></i>
+          </a>
+          <a href="mailto:bhautikkorat1111@gmail.com" aria-label="Email">
+            <i class='bx bx-envelope'></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down" aria-label="Scroll down">
+      <i class='bx bx-chevrons-down'></i>
+    </a>
+  </section>
+
+  <!-- ───── ABOUT ───── -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="about-layout">
+        <!-- Left: bio -->
+        <div class="about-bio">
+          <div class="about-bio-inner">
+            <div class="about-bio-text">
+              <div class="about-greeting-row">
+                <div class="about-initial">BK</div>
+                <div>
+                  <h3>Hey, I'm Bhautik! 👋</h3>
+                  <div class="about-status">
+                    <span class="status-dot"></span> Open to Opportunities
+                  </div>
+                </div>
+              </div>
+              <p>
+                I'm a Computer Engineering student at <strong>OM Institute of Eng. &amp; Technology</strong>,
+                affiliated to <strong>Gujarat Technological University (GTU)</strong>.
+              </p>
+              <p>
+                I love turning ideas into real-world solutions — whether it's building an AI assistant that responds to
+                your voice, or wiring up a fingerprint-secured lock from scratch. Currently pursuing my B.Tech in
+                Computer Science &amp; Engineering (2026–2029).
+              </p>
+              <div class="about-quick-info">
+                <div class="quick-info-item">
+                  <i class='bx bx-map-pin'></i>
+                  <span>Jetpur, Rajkot, Gujarat</span>
+                </div>
+                <div class="quick-info-item">
+                  <i class='bx bx-phone'></i>
+                  <a href="tel:+918320368111">8320368111</a>
+                </div>
+                <div class="quick-info-item">
+                  <i class='bx bx-envelope'></i>
+                  <a href="mailto:bhautikkorat1111@gmail.com">bhautikkorat1111@gmail.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: stat cards -->
+        <div class="about-stats">
+          <div class="stat-card">
+            <div class="stat-icon"><i class='bx bx-code-curly'></i></div>
+            <div class="stat-info">
+              <span class="stat-num">2+</span>
+              <span class="stat-label">Real-World Projects</span>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i class='bx bxs-graduation'></i></div>
+            <div class="stat-info">
+              <span class="stat-num">9.38</span>
+              <span class="stat-label">Diploma Final CGPA</span>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i class='bx bx-chip'></i></div>
+            <div class="stat-info">
+              <span class="stat-num">IoT</span>
+              <span class="stat-label">Hardware + Software</span>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i class='bx bx-globe'></i></div>
+            <div class="stat-info">
+              <span class="stat-num">3</span>
+              <span class="stat-label">Languages Spoken</span>
+            </div>
+          </div>
+          <div class="lang-card">
+            <h4><i class='bx bx-conversation'></i> Languages Spoken</h4>
+            <div class="lang-list">
+              <span class="lang-tag lang-en">
+                <span class="lang-icon">En</span>
+                <span class="lang-name">English</span>
+                <span class="lang-level">Professional</span>
+              </span>
+              <span class="lang-tag lang-hi">
+                <span class="lang-icon">हि</span>
+                <span class="lang-name">Hindi</span>
+                <span class="lang-level">Native</span>
+              </span>
+              <span class="lang-tag lang-gu">
+                <span class="lang-icon">ગુ</span>
+                <span class="lang-name">Gujarati</span>
+                <span class="lang-level">Proficient</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── SKILLS ───── -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">My Skills</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <i class='bx bx-code-block'></i>
+            <h3>Programming Languages</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">C</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">Bootstrap</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <i class='bx bx-wrench'></i>
+            <h3>Tools & Environment</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag"><i class='bx bxl-git'></i> Git</span>
+            <span class="skill-tag"><i class='bx bx-code-alt'></i> VS Code</span>
+            <span class="skill-tag">Arduino IDE</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <i class='bx bx-book-open'></i>
+            <h3>Currently Learning</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag learning"><i class='bx bx-loader-circle'></i> Web Dev</span>
+            <span class="skill-tag learning"><i class='bx bx-loader-circle'></i> OOP Concepts</span>
+            <span class="skill-tag learning"><i class='bx bx-loader-circle'></i> AI Learning</span>
+            <span class="skill-tag learning"><i class='bx bx-loader-circle'></i> Design Thinking</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <i class='bx bx-chip'></i>
+            <h3>Hardware</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Arduino Uno</span>
+            <span class="skill-tag">R307S Fingerprint Sensor</span>
+            <span class="skill-tag">Solenoid Lock</span>
+            <span class="skill-tag">Circuit Design</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── PROJECTS ───── -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I Built</span>
+        <h2 class="section-title">Projects</h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card featured">
+          <div class="project-card-top">
+            <span class="project-date">April 2026 – Present</span>
+            <span class="project-status live">Live</span>
+          </div>
+          <div class="project-icon"><i class='bx bx-shield-quarter'></i></div>
+          <h3>Biometric Security System</h3>
+          <p>A high-security locking system using Arduino Uno and R307S Fingerprint Sensor with TIP122 transistor logic for efficient power management.</p>
+          <ul class="project-highlights">
+            <li><i class='bx bx-check-circle'></i> Arduino Uno + R307S Fingerprint Sensor</li>
+            <li><i class='bx bx-check-circle'></i> 12V Solenoid Lock with TIP122 transistor logic</li>
+            <li><i class='bx bx-check-circle'></i> C++ programmed for fast authentication</li>
+            <li><i class='bx bx-check-circle'></i> Optimized DC power delivery for stability</li>
+          </ul>
+          <div class="project-tech">
+            <span>C++</span>
+            <span>Arduino</span>
+            <span>IoT</span>
+            <span>Hardware</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-top">
+            <span class="project-date">Nov 2025 – Jan 2026</span>
+            <span class="project-status completed">Completed</span>
+          </div>
+          <div class="project-icon"><i class='bx bx-bot'></i></div>
+          <h3>Eric – AI Assistant</h3>
+          <p>A custom AI application designed to handle voice commands with Python-based core logic and machine learning principles.</p>
+          <ul class="project-highlights">
+            <li><i class='bx bx-check-circle'></i> Voice command recognition & processing</li>
+            <li><i class='bx bx-check-circle'></i> Python core logic + ML integration</li>
+            <li><i class='bx bx-check-circle'></i> User-friendly interface design</li>
+            <li><i class='bx bx-check-circle'></i> Efficient response algorithms</li>
+          </ul>
+          <div class="project-tech">
+            <span>Python</span>
+            <span>AI / ML</span>
+            <span>Voice</span>
+            <span>Automation</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── EDUCATION ───── -->
+  <section class="education section" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">My Journey</span>
+        <h2 class="section-title">Education</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot active-dot"></div>
+          <div class="timeline-card" data-step="3">
+            <div class="timeline-top-row">
+              <div class="timeline-year">2026 – 2029 <span class="ongoing-badge">Ongoing</span></div>
+            </div>
+            <h3>Bachelor of Technology (B.Tech)</h3>
+            <p class="timeline-degree">Computer Science &amp; Engineering (CSE)</p>
+            <p class="timeline-inst"><i class='bx bx-building-house'></i> JG University (Recently Admitted)</p>
+            <p class="timeline-univ"><i class='bx bx-award'></i> Currently Pursuing</p>
+            <div class="timeline-tags">
+              <span>B.Tech CSE</span>
+              <span>2026 Batch</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card" data-step="2">
+            <div class="timeline-top-row">
+              <div class="timeline-year">2023 – 2026</div>
+              <div class="cgpa-badge"><i class='bx bx-star'></i> 9.38 CGPA</div>
+            </div>
+            <h3>Diploma in Computer Engineering</h3>
+            <p class="timeline-inst"><i class='bx bx-building-house'></i> OM Institute of Eng. &amp; Technology</p>
+            <p class="timeline-univ"><i class='bx bx-award'></i> Gujarat Technological University (GTU)</p>
+            <div class="timeline-tags">
+              <span>Computer Engineering</span>
+              <span>GTU</span>
+              <span>Final Sem — 9.38 CGPA</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card" data-step="1">
+            <div class="timeline-top-row">
+              <div class="timeline-year">2022</div>
+              <div class="cgpa-badge"><i class='bx bx-star'></i> 81%</div>
+            </div>
+            <h3>Secondary School (SSC / 10th)</h3>
+            <p class="timeline-inst"><i class='bx bx-building-house'></i> Lions High School, Jetpur</p>
+            <p class="timeline-univ"><i class='bx bx-award'></i> GSEB Board</p>
+            <div class="timeline-tags">
+              <span>GSEB</span>
+              <span>81% Score</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── CONTACT ───── -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Let's Talk</span>
+        <h2 class="section-title">Get In Touch</h2>
+      </div>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <p class="contact-intro">I'm currently open to new opportunities. Whether you have a project in mind, a question, or just want to say hello — my inbox is always open!</p>
+          <div class="contact-details">
+            <a href="tel:+918320368111" class="contact-item">
+              <div class="contact-item-icon"><i class='bx bx-phone'></i></div>
+              <div>
+                <span class="contact-item-label">Phone — Tap to Call</span>
+                <span class="contact-item-value">+91 8320368111</span>
+              </div>
+            </a>
+            <a href="mailto:bhautikkorat1111@gmail.com" class="contact-item">
+              <div class="contact-item-icon"><i class='bx bx-envelope'></i></div>
+              <div>
+                <span class="contact-item-label">Email</span>
+                <span class="contact-item-value">bhautikkorat1111@gmail.com</span>
+              </div>
+            </a>
+            <div class="contact-item">
+              <div class="contact-item-icon"><i class='bx bx-map'></i></div>
+              <div>
+                <span class="contact-item-label">Location</span>
+                <span class="contact-item-value">Jetpur, Rajkot, Gujarat</span>
+              </div>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="https://www.linkedin.com/in/bhautik-korat-83249a36a" target="_blank" class="social-btn">
+              <i class='bx bxl-linkedin'></i> LinkedIn
+            </a>
+            <a href="https://www.instagram.com/bhautik._.korat?igsi=MTUzNHM5bnFiZHl4dA==" target="_blank" class="social-btn">
+              <i class='bx bxl-instagram'></i> Instagram
+            </a>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm" action="https://formsubmit.co/officialbhautikkorat@gmail.com" method="POST">
+          <!-- FormSubmit config -->
+          <input type="hidden" name="_subject" value="New Portfolio Message!" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_next" value="" id="thankYouRedirect" />
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="fullname" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="hello@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Project Discussion" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+            Send Message <i class='bx bx-send'></i>
+          </button>
+          <div class="form-success" id="formSuccess">
+            <i class='bx bx-check-circle'></i>
+            <span>Message sent! I'll get back to you soon.</span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── FOOTER ───── -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-top-inner">
+          <div class="footer-brand">
+            <div class="footer-logo-wrap">
+              <span class="footer-logo"><span class="fl-b">B</span><span class="fl-dot">.</span><span class="fl-k">K</span></span>
+              <div class="footer-logo-tag">Portfolio</div>
+            </div>
+            <p>Building real things with code, circuits &amp; curiosity. Computer Engineer by passion, problem-solver by nature.</p>
+            <div class="footer-socials">
+              <a href="https://www.linkedin.com/in/bhautik-korat-83249a36a" target="_blank" aria-label="LinkedIn" class="fs-linkedin">
+                <i class='bx bxl-linkedin'></i>
+              </a>
+              <a href="https://www.instagram.com/bhautik._.korat?igsi=MTUzNHM5bnFiZHl4dA==" target="_blank" aria-label="Instagram" class="fs-instagram">
+                <i class='bx bxl-instagram'></i>
+              </a>
+              <a href="mailto:bhautikkorat1111@gmail.com" aria-label="Email" class="fs-email">
+                <i class='bx bx-envelope'></i>
+              </a>
+              <a href="tel:+918320368111" aria-label="Call" class="fs-phone">
+                <i class='bx bx-phone-call'></i>
+              </a>
+            </div>
+          </div>
+          <div class="footer-contact">
+            <h4>Say Hello</h4>
+            <a href="mailto:bhautikkorat1111@gmail.com" class="footer-email">
+              <i class='bx bx-envelope'></i> bhautikkorat1111@gmail.com
+            </a>
+            <a href="tel:+918320368111" class="footer-phone">
+              <i class='bx bx-phone'></i> +91 8320368111
+            </a>
+            <p class="footer-location">
+              <i class='bx bx-map'></i> Jetpur, Rajkot, Gujarat
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom-inner">
+          <p>© 2026 <strong>Bhautik Korat</strong>. Crafted with <span class="heart">❤️</span> &amp; curiosity.</p>
+          <p class="footer-credit">Computer Engineer · GTU · Jetpur</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class='bx bx-up-arrow-alt'></i>
+  </button>
+
+  <script src="javaScript/main.js"></script>
+</body>
+
+</html>
