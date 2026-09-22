@@ -137,29 +137,49 @@ if (contactForm) {
     const subject = document.getElementById('subject').value.trim() || 'Portfolio Message';
     const message = document.getElementById('message').value.trim();
 
+    if (!name || !email || !message) return;
+
     submitBtn.disabled  = true;
     submitBtn.innerHTML = '<i class="bx bx-loader-alt bx-spin"></i> Sending…';
 
-    // Build the email body so the full message lands in the inbox
     const payload = new FormData();
-    payload.append('name',    name);
-    payload.append('email',   email);
-    payload.append('_subject', `[Portfolio] ${subject} — from ${name}`);
-    payload.append('message', `Name: ${name}\nEmail: ${email}\nSubject: ${subject}\n\nMessage:\n${message}`);
-    payload.append('_captcha', 'false');
+    payload.append('fullname',  name);
+    payload.append('email',     email);
+    payload.append('subject',   subject);
+    payload.append('message',   message);
+    payload.append('_subject',  `[Portfolio] ${subject} — from ${name}`);
+    payload.append('_captcha',  'false');
     payload.append('_template', 'box');
 
     try {
-      await fetch('https://formsubmit.co/ajax/officialbhautikkorat@gmail.com', {
+      const res = await fetch('https://formsubmit.co/ajax/officialbhautikkorat@gmail.com', {
         method:  'POST',
         headers: { 'Accept': 'application/json' },
         body:    payload,
       });
-      contactForm.reset();
+
+      const data = await res.json();
+
+      if (res.ok && data.success === 'true') {
+        contactForm.reset();
+        formSuccess.querySelector('span').textContent = 'Message sent! I\'ll get back to you soon.';
+        formSuccess.style.background = '#dcfce7';
+        formSuccess.style.color      = '#166534';
+        formSuccess.style.border     = '1px solid #86efac';
+      } else {
+        formSuccess.querySelector('span').textContent = 'Something went wrong. Please email directly!';
+        formSuccess.style.background = '#fef3c7';
+        formSuccess.style.color      = '#92400e';
+        formSuccess.style.border     = '1px solid #f59e0b';
+      }
       formSuccess.classList.add('show');
       setTimeout(() => formSuccess.classList.remove('show'), 6000);
+
     } catch (_) {
-      contactForm.reset();
+      formSuccess.querySelector('span').textContent = 'Network error. Try emailing directly!';
+      formSuccess.style.background = '#fee2e2';
+      formSuccess.style.color      = '#991b1b';
+      formSuccess.style.border     = '1px solid #fca5a5';
       formSuccess.classList.add('show');
       setTimeout(() => formSuccess.classList.remove('show'), 6000);
     } finally {
